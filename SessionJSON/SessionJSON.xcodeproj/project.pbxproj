@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		890746F827CE5726008347D1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890746F727CE5726008347D1 /* Network.swift */; };
-		890746FB27CE5BB3008347D1 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890746FA27CE5BB3008347D1 /* PostsCell.swift */; };
+		890746FB27CE5BB3008347D1 /* ElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890746FA27CE5BB3008347D1 /* ElementCell.swift */; };
 		894E17D727C95A3500DC83DA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E17D627C95A3500DC83DA /* Post.swift */; };
 		894E17D927C95D0300DC83DA /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E17D827C95D0300DC83DA /* Comment.swift */; };
 		894E17DB27C95DCE00DC83DA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E17DA27C95DCE00DC83DA /* Photo.swift */; };
@@ -24,11 +24,26 @@
 		8957AC2F27C94040008EF048 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957AC2E27C94040008EF048 /* PhotoViewController.swift */; };
 		8957AC3127C94052008EF048 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957AC3027C94052008EF048 /* TodoViewController.swift */; };
 		8957AC3327C9405D008EF048 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957AC3227C9405D008EF048 /* UserViewController.swift */; };
+		8971EEE027D0DDFB00146FB2 /* DetailCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971EEDF27D0DDFB00146FB2 /* DetailCommentViewController.swift */; };
+		8971EEE227D0E92F00146FB2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971EEE127D0E92F00146FB2 /* BackgroundView.swift */; };
+		89AD723327CFC017002022DB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD723227CFC016002022DB /* NetworkError.swift */; };
+		89AD723527CFC2EA002022DB /* DetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD723427CFC2E9002022DB /* DetailPostViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		891F090727D00825000FB4AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8957AC0727C93AA4008EF048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8957AC0E27C93AA4008EF048;
+			remoteInfo = SessionJSON;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		890746F727CE5726008347D1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		890746FA27CE5BB3008347D1 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		890746FA27CE5BB3008347D1 /* ElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCell.swift; sourceTree = "<group>"; };
+		891F090327D00825000FB4AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		894E17D627C95A3500DC83DA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		894E17D827C95D0300DC83DA /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		894E17DA27C95DCE00DC83DA /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -46,9 +61,20 @@
 		8957AC2E27C94040008EF048 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		8957AC3027C94052008EF048 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		8957AC3227C9405D008EF048 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8971EEDF27D0DDFB00146FB2 /* DetailCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentViewController.swift; sourceTree = "<group>"; };
+		8971EEE127D0E92F00146FB2 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		89AD723227CFC016002022DB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		89AD723427CFC2E9002022DB /* DetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		891F090027D00825000FB4AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8957AC0C27C93AA4008EF048 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				890746F727CE5726008347D1 /* Network.swift */,
+				89AD723227CFC016002022DB /* NetworkError.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -70,15 +97,34 @@
 		890746F927CE5B83008347D1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				890746FA27CE5BB3008347D1 /* PostsCell.swift */,
+				890746FA27CE5BB3008347D1 /* ElementCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		891F090427D00825000FB4AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		891F090C27D00C06000FB4AF /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				8957AC2A27C94017008EF048 /* PostViewController.swift */,
+				89AD723427CFC2E9002022DB /* DetailPostViewController.swift */,
+				894E17D627C95A3500DC83DA /* Post.swift */,
+				8971EEE127D0E92F00146FB2 /* BackgroundView.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		8957AC0627C93AA4008EF048 = {
 			isa = PBXGroup;
 			children = (
 				8957AC1127C93AA4008EF048 /* SessionJSON */,
+				891F090427D00825000FB4AF /* Tests */,
 				8957AC1027C93AA4008EF048 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8957AC0F27C93AA4008EF048 /* SessionJSON.app */,
+				891F090327D00825000FB4AF /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +143,8 @@
 			children = (
 				8957AC2727C93E6D008EF048 /* Main */,
 				8957AC2827C93E7F008EF048 /* Controller */,
+				891F090C27D00C06000FB4AF /* Post */,
+				8971EEDE27D0DD9000146FB2 /* Comment */,
 				890746F927CE5B83008347D1 /* Cell */,
 				890746F627CE5705008347D1 /* Presenter */,
 				8957AC2927C93EBF008EF048 /* Model */,
@@ -127,8 +176,6 @@
 		8957AC2827C93E7F008EF048 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8957AC2A27C94017008EF048 /* PostViewController.swift */,
-				8957AC2C27C9402D008EF048 /* CommentViewController.swift */,
 				8957AC2E27C94040008EF048 /* PhotoViewController.swift */,
 				8957AC3027C94052008EF048 /* TodoViewController.swift */,
 				8957AC3227C9405D008EF048 /* UserViewController.swift */,
@@ -139,8 +186,6 @@
 		8957AC2927C93EBF008EF048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				894E17D627C95A3500DC83DA /* Post.swift */,
-				894E17D827C95D0300DC83DA /* Comment.swift */,
 				894E17DA27C95DCE00DC83DA /* Photo.swift */,
 				894E17DC27C95DE800DC83DA /* Todo.swift */,
 				894E17DE27C95DF600DC83DA /* User.swift */,
@@ -148,9 +193,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8971EEDE27D0DD9000146FB2 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				8957AC2C27C9402D008EF048 /* CommentViewController.swift */,
+				8971EEDF27D0DDFB00146FB2 /* DetailCommentViewController.swift */,
+				894E17D827C95D0300DC83DA /* Comment.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		891F090227D00825000FB4AF /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891F090B27D00825000FB4AF /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				891F08FF27D00825000FB4AF /* Sources */,
+				891F090027D00825000FB4AF /* Frameworks */,
+				891F090127D00825000FB4AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				891F090827D00825000FB4AF /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 891F090327D00825000FB4AF /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8957AC0E27C93AA4008EF048 /* SessionJSON */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8957AC2327C93AA6008EF048 /* Build configuration list for PBXNativeTarget "SessionJSON" */;
@@ -178,6 +251,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					891F090227D00825000FB4AF = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8957AC0E27C93AA4008EF048;
+					};
 					8957AC0E27C93AA4008EF048 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -197,11 +274,19 @@
 			projectRoot = "";
 			targets = (
 				8957AC0E27C93AA4008EF048 /* SessionJSON */,
+				891F090227D00825000FB4AF /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		891F090127D00825000FB4AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8957AC0D27C93AA4008EF048 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,29 +299,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		891F08FF27D00825000FB4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8957AC0B27C93AA4008EF048 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				894E17DF27C95DF600DC83DA /* User.swift in Sources */,
+				89AD723327CFC017002022DB /* NetworkError.swift in Sources */,
 				8957AC2D27C9402D008EF048 /* CommentViewController.swift in Sources */,
 				8957AC3327C9405D008EF048 /* UserViewController.swift in Sources */,
 				8957AC2B27C94017008EF048 /* PostViewController.swift in Sources */,
 				8957AC3127C94052008EF048 /* TodoViewController.swift in Sources */,
 				8957AC1727C93AA5008EF048 /* MainViewController.swift in Sources */,
-				890746FB27CE5BB3008347D1 /* PostsCell.swift in Sources */,
+				890746FB27CE5BB3008347D1 /* ElementCell.swift in Sources */,
 				894E17D927C95D0300DC83DA /* Comment.swift in Sources */,
+				8971EEE027D0DDFB00146FB2 /* DetailCommentViewController.swift in Sources */,
+				89AD723527CFC2EA002022DB /* DetailPostViewController.swift in Sources */,
 				8957AC1327C93AA5008EF048 /* AppDelegate.swift in Sources */,
 				894E17DD27C95DE800DC83DA /* Todo.swift in Sources */,
 				894E17DB27C95DCE00DC83DA /* Photo.swift in Sources */,
 				894E17D727C95A3500DC83DA /* Post.swift in Sources */,
 				8957AC1527C93AA5008EF048 /* SceneDelegate.swift in Sources */,
 				890746F827CE5726008347D1 /* Network.swift in Sources */,
+				8971EEE227D0E92F00146FB2 /* BackgroundView.swift in Sources */,
 				8957AC2F27C94040008EF048 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891F090827D00825000FB4AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8957AC0E27C93AA4008EF048 /* SessionJSON */;
+			targetProxy = 891F090727D00825000FB4AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8957AC1D27C93AA6008EF048 /* LaunchScreen.storyboard */ = {
@@ -250,6 +354,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		891F090927D00825000FB4AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5BAPBZ387;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexrozh.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionJSON.app/SessionJSON";
+			};
+			name = Debug;
+		};
+		891F090A27D00825000FB4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5BAPBZ387;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexrozh.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionJSON.app/SessionJSON";
+			};
+			name = Release;
+		};
 		8957AC2127C93AA6008EF048 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		891F090B27D00825000FB4AF /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891F090927D00825000FB4AF /* Debug */,
+				891F090A27D00825000FB4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8957AC0A27C93AA4008EF048 /* Build configuration list for PBXProject "SessionJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
