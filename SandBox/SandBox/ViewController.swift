@@ -33,11 +33,9 @@ extension ViewController {
     private func layout() {
         view.addSubview(textField)
 
-        NSLayoutConstraint.activate([
-            textField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            textField.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
-            view.trailingAnchor.constraint(equalToSystemSpacingAfter: textField.trailingAnchor, multiplier: 2)
-        ])
+        textField.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        textField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        textField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
     }
 }
 
@@ -66,9 +64,9 @@ extension ViewController: UITextFieldDelegate {
     // detect - keypress
     // return NO to not change text
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let word = textField.text ?? ""
-        let char = string
-        print("Default - shouldChangeCharactersIn: \(word) \(char)")
+//        let word = textField.text ?? ""
+//        let char = string
+//        print("Default - shouldChangeCharactersIn: \(word) \(char)")
         return true
     }
 
@@ -87,7 +85,7 @@ extension ViewController: UITextFieldDelegate {
 // MARK: - Extra Actions
 extension ViewController {
     @objc func textFieldEditingChanged(_ sender: UITextField) {
-        print("Extra - textFieldEditingChanged: \(sender.text)")
+        print("Extra - textFieldEditingChanged: \(String(describing: sender.text))")
     }
 }
 
